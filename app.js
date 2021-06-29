@@ -15,7 +15,6 @@ var api = require('./routes/api');
 var app = express();
 redirect(app);
 //Connect to Mongoose
-// mongoose.connect("mongodb://localhost:27017/TrollBasket");
 const dbURI = process.env + "mongodb://localhost:27017/savingRentApplication";
 
 mongoose.connect(
@@ -34,7 +33,6 @@ app.listen(port, () => console.log(`Server running on port ${port}`));
     console.log("Connected to DB");
   }
 );
-// var db = mongoose.connection;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -60,16 +58,6 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-// error handler
-// app.use(function(err, req, res, next) {
-//   // set locals, only providing error in development
-//   res.locals.message = err.message;
-//   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-//   // render the error page
-//   res.status(err.status || 500);
-//   res.render('error');
-// });
 
 
 
