@@ -22,7 +22,7 @@ A simple banking application with node, express and mongo
 # Installation
 Make a project folder then open it:
 ```sh
-$ mkdir nodebank && cd nodebank
+$ mkdir  && cd into dir
 ```
 
 
